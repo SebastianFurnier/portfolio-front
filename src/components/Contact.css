@@ -1,0 +1,10 @@
+.contact-container {
+  color: #f0f0f0; 
+  font-family: 'Source Code Pro', monospace, monospace;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  scroll-margin-top: 150px;
+  padding-bottom: 14vh;
+}
