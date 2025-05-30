@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+.tech-container {
+    scroll-margin-top: 150px;
+    padding-top: 3rem;
+    padding-bottom: 10vh;
+    color: #f0f0f0; 
+    font-family: 'Source Code Pro', monospace, monospace;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tech-icons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5rem;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.tech-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.tech-logo:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}

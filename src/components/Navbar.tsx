@@ -12,7 +12,8 @@ function Navbar() {
                     <li><a href="#start">Inicio</a></li>
                     <li><a href="#proyectos">Proyectos</a></li>
                     <li><a href="#about-me">Sobre mi</a></li>
-                    <li><a href="#contacto">Contacto y links</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </div>
         </nav>

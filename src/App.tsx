@@ -6,6 +6,7 @@ import AboutMe from './components/AboutMe'
 import ScrollDownHint from './components/ScrollDownHint'
 import Sep from './components/sep'
 import Contact from './components/Contact'
+import Technologies from './components/technologies'
 
 function App() {
 
@@ -19,7 +20,7 @@ function App() {
         <Proyects />
         <AboutMe />
         <Sep />
-        <ScrollDownHint />
+        <Technologies />
         <Sep />
         <Contact />
       </div>
