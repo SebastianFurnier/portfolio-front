@@ -31,3 +31,14 @@
   gap: 3rem;
   margin-top: 4rem;
 }
+
+@media (max-width: 768px) {
+  .contact-links {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  #sep-contacto {
+    display: none;
+  }
+}

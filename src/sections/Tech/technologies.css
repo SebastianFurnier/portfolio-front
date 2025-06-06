@@ -35,6 +35,17 @@
     cursor: pointer;
 }
 
+#sep-tech {
+  height: 2px;
+  width: 50%;            
+  background-color: #b2d1c831;
+  margin: auto auto; 
+  position: absolute;
+  top: 300%;
+  left: 25%;
+  z-index: 0;
+}
+
 @media (max-width: 768px) {
   .tech-icons {
     grid-template-columns: repeat(3, 1fr);
@@ -44,5 +55,9 @@
     .tech-logo {
         width: 50px;
         height: 50px;
+    }
+
+    #sep-tech {
+        display: none;
     }
 }
