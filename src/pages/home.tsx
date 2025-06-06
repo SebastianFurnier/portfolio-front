@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { FaLinkedin } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
+import { FaChevronDown } from 'react-icons/fa';
 import './home.css';
 
 const texts = [
@@ -42,31 +43,20 @@ function TypeWriter({ text, speed, pause }: TypewriterProps) {
 }
 
 function Home() {
+
+  const [hideScrollDown, setHideScrollDown] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setHideScrollDown(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <div className="snowflake" style={{ left: '10%', animationDuration: '10s' }}></div>
-      <div className="snowflake" style={{ left: '25%', animationDuration: '10s' }}></div>
-      <div className="snowflake" style={{ left: '40%', animationDuration: '12s' }}></div>
-      <div className="snowflake" style={{ left: '55%', animationDuration: '9s' }}></div>
-      <div className="snowflake" style={{ left: '70%', animationDuration: '11s' }}></div>
-      <div className="snowflake" style={{ left: '20%', animationDuration: '13s' }}></div>
-      <div className="snowflake" style={{ left: '60%', animationDuration: '15s' }}></div>
-      <div className="snowflake" style={{ left: '7%', animationDuration: '16s' }}></div>
-      <div className="snowflake" style={{ left: '95%', animationDuration: '16s' }}></div>
-      <div className="snowflake" style={{ left: '3%', animationDuration: '18s' }}></div>
-      <div className="snowflake" style={{ left: '12%', animationDuration: '22s' }}></div>
-      <div className="snowflake" style={{ left: '18%', animationDuration: '17s' }}></div>
-      <div className="snowflake" style={{ left: '27%', animationDuration: '25s' }}></div>
-      <div className="snowflake" style={{ left: '35%', animationDuration: '19s' }}></div>
-      <div className="snowflake" style={{ left: '46%', animationDuration: '28s' }}></div>
-      <div className="snowflake" style={{ left: '52%', animationDuration: '23s' }}></div>
-      <div className="snowflake" style={{ left: '63%', animationDuration: '20s' }}></div>
-      <div className="snowflake" style={{ left: '74%', animationDuration: '21s' }}></div>
-      <div className="snowflake" style={{ left: '82%', animationDuration: '16s' }}></div>
-      <div className="snowflake" style={{ left: '88%', animationDuration: '22s' }}></div>
-      <div className="snowflake" style={{ left: '97%', animationDuration: '15' }}></div>
-
- 
       <a href="mailto:sfurnier@fi.uba.ar" className='email'>
         <p>sfurnier@fi.uba.ar</p>
       </a>
@@ -98,6 +88,9 @@ function Home() {
                 <FaGithub size={30} />
               </a>
             </div>
+              <div className={`scroll-down ${hideScrollDown ? "hidden" : ""}`}>
+                <FaChevronDown size={30} />
+              </div>
         </div>
       </div>
     </>

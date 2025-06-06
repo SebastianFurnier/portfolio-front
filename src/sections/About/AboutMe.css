@@ -2,7 +2,6 @@
 
 .about-me-container {
   color: #e4d7bc; 
-  background: linear-gradient(#2a563f, #0D0D0D);
   font-family: 'Source Code Pro', monospace, monospace;
   display: flex;
   flex-direction: column; 
