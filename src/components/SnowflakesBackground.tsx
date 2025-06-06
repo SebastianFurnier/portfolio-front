@@ -1,6 +1,3 @@
-// SnowflakesBackground.tsx
-import React from 'react';
-
 const SnowflakesBackground = () => {
   return (
     <>
