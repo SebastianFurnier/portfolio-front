@@ -23,6 +23,7 @@ function Contact() {
                     <FaPhone size={35} />
                 </a>
             </div>
+            <div id="sep-contacto"></div>
         </div>
     );
 }

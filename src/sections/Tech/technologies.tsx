@@ -31,6 +31,7 @@ function Technologies() {
             />
         ))}
       </div>
+      <div id='sep-tech'></div>
     </div>
   );
 }

@@ -6,6 +6,32 @@
   
 html, body {
     height: 100%;
-    background-color: #1a161a;
 }
+
+body {
+  margin: 0;
+  background-color: hsl(0, 0%, 13%);
+}
+
+.snowflake {
+  position: absolute;
+  top: -5px;
+  width: 3.5px;
+  height: 3.5px;
+  background: white;
+  border-radius: 50%;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(100vh) translateX(50px);
+    opacity: 0;
+  }
+}
+
   

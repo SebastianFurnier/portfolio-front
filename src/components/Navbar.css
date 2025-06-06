@@ -3,13 +3,13 @@
 .navbar {
   color: white;
   background-color: #1a161aab;
-  padding: 1rem 2rem;
-  padding-left: 10vw;
+  height: 10vh;
   font-family: 'Source Code Pro', monospace, monospace;
   box-shadow: 0 2px 8px rgba(0,0,0,0.5);
   backdrop-filter: blur(10px); 
   position: sticky;
   top : 0;
+  z-index: 1000;
 }
 
 .navbar-container {
@@ -20,7 +20,8 @@
 }
 
 .navbar-title {
-  font-size: 2rem;
+  padding-left: 20vh;
+  padding-top: 2vh;
   font-weight: bold;
   white-space: nowrap;
   display: flex;
@@ -34,7 +35,6 @@
   list-style: none;
   display: flex;
   gap: 2rem;
-  flex-wrap: wrap;
   padding-right: 10vw;
 }
 
@@ -42,7 +42,6 @@
   color: white;
   text-decoration: none;
   cursor: pointer;
-  font-weight: 500;
   transition: transform 0.3s ease, color 0.3s ease, font-size 0.3s ease;
 }
 
@@ -50,27 +49,4 @@
   color: #b2d1c8;
   font-size: 1.04rem;
   transform: translateY(-5px);
-}
-
-@media (max-width: 640px) {
-  .navbar-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar-menu {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 1rem;
-    gap: 1rem;
-  }
-
-  .navbar-menu li {
-    width: 100%;
-  }
-
-  .navbar-menu a {
-    width: 100%;
-    display: block;
-  }
 }
