@@ -7,7 +7,7 @@ function Projects() {
             title: "Turnow",
             description: "Aplicación para administrar turnos.",
             tech: ["React", "Java", "Spring Boot"],
-            image: "/public/turnow.png",
+            image: "/turnow.png",
             demo: "https://turnow.vercel.app",
             repo: null,
             status: "Live"
@@ -16,7 +16,7 @@ function Projects() {
             title: "Acortador de Links",
             description: "Acortador de links.",
             tech: ["React", "Java", "Spring Boot", "Docker"],
-            image: "/public/shortener.png",
+            image: "/shortener.png",
             demo: "https://sfshortlink.vercel.app/",
             repo: "https://github.com/SebastianFurnier/LINK_SHORTENER",
             status: "Live"
@@ -25,7 +25,7 @@ function Projects() {
             title: "Portfolio personal",
             description: "Portfolio personal.",
             tech: ["React", "CSS"],
-            image: "/public/portfolio.png",
+            image: "/portfolio.png",
             demo: "https://sebastianfurnier.vercel.app/",
             repo: null,
             status: "Live"
@@ -34,7 +34,7 @@ function Projects() {
             title: "Sistema POS",
             description: "Punto de venta para comercio del rubro eléctrico.",
             tech: ["Java", "Spring Boot", "SQL", "React"],
-            image: "/public/pos.png",
+            image: "/pos.png",
             demo: "https://sayco-front.vercel.app/",
             repo: null,
             status: "En desarrollo"
