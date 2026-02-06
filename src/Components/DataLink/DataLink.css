@@ -1,0 +1,23 @@
+.link-to-data {
+    width: 70%;
+    height: 60px;
+    
+    border-radius: 20px;
+
+    padding-left: 10px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    font-family: "Google Sans Code", monospace;
+    font-size: 1.3rem;
+
+    transition: transform 0.4s ease-in-out;
+}
+
+.link-to-data:hover {
+    transform: translateY(-5px);
+    background-color: rgba(26, 25, 25, 0.417);
+    cursor: pointer;
+}

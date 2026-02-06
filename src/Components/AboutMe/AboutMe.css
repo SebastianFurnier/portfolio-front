@@ -1,0 +1,82 @@
+.about-me-principal-container {
+    width: 100%;
+    flex-shrink: 0;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    color: aliceblue;
+    font-family: "Google Sans Code";
+}
+
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+
+    flex: 0.5;
+
+    padding: 30px;
+    margin: 30px;
+
+    border-radius: 20px;
+
+    background-color: rgba(190, 195, 213, 0.072);
+
+    transition: 0.4s;
+    
+    gap: 20px;
+}
+
+.about-me-container:hover {
+    background-color: rgba(86, 32, 32, 0.224);
+}
+
+.about-me {
+    border: 1px solid var(--border-soft);
+    border-radius: 10px;
+
+    padding: 10px;
+
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.full-name {
+    font-size: 2.5rem;
+}
+
+.sub-title {
+    font-size: 1.5rem;
+}
+
+.resume-button-container {
+    display: flex;
+
+    flex: 0.5;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-button {
+    width: 10rem;
+    height: 4rem;
+
+    border-radius: 15px;
+    border: none;
+
+    background-color: rgba(221, 50, 50, 0.45);
+
+    font-size: 1.2rem;
+    font-family: "Google Sans Code", monospace;
+    color: rgb(255, 255, 255);
+
+    transition: 0.3s;
+}
+
+.resume-button:hover {
+    transform: translateY(-5px);
+    background-color: rgba(26, 25, 25, 0.417);
+    cursor: pointer;
+}
