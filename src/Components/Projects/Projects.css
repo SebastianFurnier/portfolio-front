@@ -28,3 +28,21 @@
     padding: 0px 0px 40px 55px;
     gap: 1rem;
 }
+
+@media (max-width: 768px) {
+
+    .projects-principal-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects-grid  {
+        height: auto;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+}

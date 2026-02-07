@@ -113,3 +113,21 @@
     font-family: "Google Sans Code", monospace;
     color: rgba(194, 194, 194, 0.602);;
 }
+
+@media (max-width: 898px) {
+    .principal-data-container {
+        min-height: 95%;
+        width: 95%;
+    }
+    
+    .left-bar-container {
+        display: none;
+    }
+
+    .center-content section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: auto;
+    }
+}

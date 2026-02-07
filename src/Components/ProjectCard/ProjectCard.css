@@ -79,3 +79,10 @@
     text-decoration: none;
 }
 
+@media (max-width: 768px) {
+    .project-card {
+        width: 100%;
+        height: 28%;
+    }
+}
+

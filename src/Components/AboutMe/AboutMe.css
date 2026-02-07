@@ -80,3 +80,20 @@
     background-color: rgba(26, 25, 25, 0.417);
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    .about-me-principal-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-me-container {
+        width: 90%;
+    }
+
+    .about-me-text {
+        text-align: justify;
+    }
+}
