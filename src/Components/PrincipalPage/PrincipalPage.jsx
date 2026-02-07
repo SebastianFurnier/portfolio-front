@@ -50,6 +50,12 @@ function PrincipalPage() {
             </video>
             <div className="principal-data-container">
                 <div className="nav-bar-container">
+                    <a href="mailto:sfurnier@fi.uba.ar">
+                        sfurnier@fi.uba.ar
+                    </a>
+                    <a href="tel:+541149796599">
+                        11-4979-6599
+                    </a>
                 </div>
                 <div className="principal-content-container">
                     <div className="left-bar-container">
